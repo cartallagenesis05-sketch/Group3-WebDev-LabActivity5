@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #333;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #273c75;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #273c75;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background: #273c75;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #192a56;
+}
+
+section {
+    margin-top: 35px;
+}
+
+.task {
+    background: #f8f9fd;
+    border: 1px solid #e5e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.task h3 {
+    color: #273c75;
+    margin-bottom: 10px;
+}
+
+.task p {
+    color: #666;
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+}
+
+.task a {
+    color: #273c75;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.task a:hover {
+    text-decoration: underline;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.delete-button {
+    background: #e74c3c;
+}
+
+.delete-button:hover {
+    background: #c0392b;
+}
+
+.error {
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+a {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    main {
+        padding: 22px;
+    }
+}
+
+/* Lab 5 additions: task status and toggle button */
+.task.completed h3 {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.task .status {
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.toggle-form {
+    display: inline;
+    margin-right: 8px;
+}
+
+.toggle-button {
+    background: #27ae60;
+}
+
+.toggle-button:hover {
+    background: #1e8449;
+}
